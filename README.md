@@ -1,6 +1,6 @@
 # Claude Code Dev Cycle 🏁
 
-![Claude Code Dev Cycle Banner](docs/banner.svg)
+![Claude Code Dev Cycle Banner](https://raw.githubusercontent.com/Rev4nchist/claude-code-dev-cycle/main/docs/banner.svg)
 
 Minimal repository that demonstrates the **Cursor + TaskMaster + SuperClaude** workflow (with SpecStory session history plus Context7, CodeRabbit, BrowserBase, and StageHand integrations).
 
