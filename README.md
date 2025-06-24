@@ -13,6 +13,7 @@ Minimal repository that demonstrates the **Cursor + TaskMaster + SuperClaude** w
 | Dark-theme architecture diagram (PNG) | `docs/architecture.png` |
 | Mermaid source | `docs/architecture.mmd` |
 | Dev-cycle explanation | `docs/dev-cycle-overview.md` |
+| Integration setup guide | `docs/integrations-setup.md` |
 | One-click bootstrap scripts | `scripts/init.sh`, `scripts/init.ps1` |
 
 ---
