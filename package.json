@@ -1,0 +1,12 @@
+{
+  "name": "personal-agent-starter",
+  "version": "0.1.0",
+  "description": "Minimal starter kit for Cursor + TaskMaster dev workflow",
+  "license": "MIT",
+  "scripts": {
+    "build:diagram": "mmdc -i docs/architecture.mmd -o docs/architecture.png -t dark"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.9.0"
+  }
+} 

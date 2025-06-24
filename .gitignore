@@ -1,0 +1,11 @@
+# Node / TaskMaster
+node_modules/
+.taskmaster/state.json
+.taskmaster/reports/
+.taskmaster/tasks/
+# SpecStory (users opt-in locally)
+.specstory/*
+# OS / IDE noise
+.DS_Store
+Thumbs.db
+.vscode/ 

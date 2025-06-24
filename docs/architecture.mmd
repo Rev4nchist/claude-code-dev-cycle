@@ -1,0 +1,41 @@
+%%{init: {"theme":"dark"}}%%
+graph TD
+  subgraph "Developer Workflow"
+    developer["Developer"]:::role
+    cursor["Cursor IDE"]:::tool
+    specstory["SpecStory<br/>(Session History)"]:::aux
+    superclaude["SuperClaude<br/>(Chat Commands)"]:::tool
+    claudeCode["Claude Code<br/>(CLI)"]:::tool
+    taskmaster["TaskMaster<br/>(MCP Server)"]:::server
+  end
+
+  subgraph "Auxiliary MCP Servers"
+    context7["Context7<br/>(Docs)"]:::server
+    browserbase["BrowserBase<br/>(Testing)"]:::server
+    coderabbit["CodeRabbit<br/>(Review)"]:::server
+    stagehand["StageHand<br/>(CI)"]:::server
+  end
+
+  developer --> cursor
+  cursor --> superclaude
+  cursor --> taskmaster
+  cursor --> claudeCode
+  cursor <-->|"Auto-saved Logs"| specstory
+  superclaude -.->|"/user:* Bridges"| taskmaster
+  superclaude -.-> claudeCode
+  claudeCode -->|"Implements Code"| taskmaster
+  taskmaster -->|"Task Data & Status"| cursor
+  cursor --> context7
+  cursor --> browserbase
+  cursor --> coderabbit
+  cursor --> stagehand
+
+  classDef role fill:#bd7c00,stroke:#ffffff,stroke-width:2px;
+  classDef tool fill:#1f77b4,stroke:#ffffff,stroke-width:2px;
+  classDef aux fill:#9467bd,stroke:#ffffff,stroke-width:2px;
+  classDef server fill:#ff7f0e,stroke:#ffffff,stroke-width:2px;
+
+  class developer role;
+  class cursor,superclaude,claudeCode tool;
+  class specstory aux;
+  class taskmaster,context7,browserbase,coderabbit,stagehand server; 
