@@ -1,4 +1,4 @@
-# Personal-Agent Starter Kit 🏁
+# Claude Code Dev Cycle 🏁
 
 Minimal repository that demonstrates the **Cursor + TaskMaster + SuperClaude** workflow (with SpecStory session history plus Context7, CodeRabbit, BrowserBase, and StageHand integrations).
 
